@@ -4,11 +4,15 @@ public class Executor {
 	public static void main(String[] args) {
 		System.out.println("Welcome to Linked List Problem!!!");
 		
-		Node<Integer> firstNode = new Node<>(56);
+		Node<Integer> firstNode = new Node<>(70);
     	Node<Integer> secondNode = new Node<>(30);
-    	Node<Integer> thirdNode = new Node<>(70);
+    	Node<Integer> thirdNode = new Node<>(56);
     	
-    	firstNode.setNext(secondNode);
-    	secondNode.setNext(thirdNode);
+    	LinkedList linkedList = new LinkedList();
+    	linkedList.add(firstNode);
+    	linkedList.add(secondNode);
+    	linkedList.add(thirdNode);
+    	
+    	linkedList.printLinkedList();
 	}
 }

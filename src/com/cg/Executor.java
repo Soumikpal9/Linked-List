@@ -16,8 +16,12 @@ public class Executor {
     	linkedList.add(thirdNode);
     	linkedList.add(fourthNode);
     	
-    	linkedList.addMiddle(midNode);
+    	linkedList.printLinkedList();
     	
+    	linkedList.addMiddle(midNode);
+    	linkedList.printLinkedList();
+    	
+    	linkedList.popFirst();
     	linkedList.printLinkedList();
 	}
 }

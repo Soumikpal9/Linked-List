@@ -7,11 +7,16 @@ public class Executor {
 		Node<Integer> firstNode = new Node<>(70);
     	Node<Integer> secondNode = new Node<>(30);
     	Node<Integer> thirdNode = new Node<>(56);
+    	Node<Integer> fourthNode = new Node<>(66);
+    	Node<Integer> midNode = new Node<>(42);
     	
     	LinkedList linkedList = new LinkedList();
-    	linkedList.append(firstNode);
-    	linkedList.append(secondNode);
-    	linkedList.append(thirdNode);
+    	linkedList.add(firstNode);
+    	linkedList.add(secondNode);
+    	linkedList.add(thirdNode);
+    	linkedList.add(fourthNode);
+    	
+    	linkedList.addMiddle(midNode);
     	
     	linkedList.printLinkedList();
 	}

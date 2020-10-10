@@ -9,9 +9,9 @@ public class Executor {
     	Node<Integer> thirdNode = new Node<>(56);
     	
     	LinkedList linkedList = new LinkedList();
-    	linkedList.add(firstNode);
-    	linkedList.add(secondNode);
-    	linkedList.add(thirdNode);
+    	linkedList.append(firstNode);
+    	linkedList.append(secondNode);
+    	linkedList.append(thirdNode);
     	
     	linkedList.printLinkedList();
 	}

@@ -26,5 +26,8 @@ public class Executor {
     	
     	linkedList.popLast();
     	linkedList.printLinkedList();
+    	
+    	System.out.println(linkedList.searchValue(fourthNode));
+    	
 	}
 }

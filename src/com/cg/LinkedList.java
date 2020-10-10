@@ -1,6 +1,6 @@
 package com.cg;
 
-public class LinkedList {
+public class LinkedList<K> {
 	public INode head;
 	public INode tail;
 	
@@ -78,6 +78,17 @@ public class LinkedList {
 				head = tail = null;
 			}
 		}
+	}
+	
+	public boolean searchValue(INode newNode) {
+		INode tempNode = head;
+		while(tempNode != null) {
+			if(tempNode.getKey() == newNode.getKey()) {
+				return true;
+			}
+			tempNode = tempNode.getNext();
+		}
+		return false;
 	}
 	
 	public int sizeOfLinkedList() {

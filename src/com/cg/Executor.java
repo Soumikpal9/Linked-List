@@ -21,13 +21,8 @@ public class Executor {
     	linkedList.addMiddle(midNode);
     	linkedList.printLinkedList();
     	
-    	linkedList.popFirst();
+    	linkedList.popValue(midNode);
     	linkedList.printLinkedList();
-    	
-    	linkedList.popLast();
-    	linkedList.printLinkedList();
-    	
-    	System.out.println(linkedList.searchValue(fourthNode));
     	
 	}
 }

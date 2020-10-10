@@ -80,15 +80,28 @@ public class LinkedList<K> {
 		}
 	}
 	
-	public boolean searchValue(INode newNode) {
+	public void popValue(INode newNode) {
+		int index = searchValue(newNode);
+		int count = 0;
+		INode current = head;
+		while(count < index - 1) {
+			current = current.getNext();
+			count++;
+		}
+		current.setNext(current.getNext().getNext());
+	}
+	
+	public int searchValue(INode newNode) {
 		INode tempNode = head;
+		int index = 0;
 		while(tempNode != null) {
 			if(tempNode.getKey() == newNode.getKey()) {
-				return true;
+				return index;
 			}
 			tempNode = tempNode.getNext();
+			index++;
 		}
-		return false;
+		return -1;
 	}
 	
 	public int sizeOfLinkedList() {

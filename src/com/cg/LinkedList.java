@@ -114,6 +114,26 @@ public class LinkedList<K> {
 		return size;
 	}
 	
+	public void sortList() {
+		INode prev = head,  current = null;
+		K temp;
+		if(head == null)	return;
+		else {
+			while(prev != null) {
+				current = prev.getNext();
+				while(current != null) {
+					if((int)prev.getKey() > (int)current.getKey()) {
+						temp = (K) prev.getKey();
+						prev.setKey(current.getKey());
+						current.setKey(temp);
+					}
+					current = current.getNext();
+				}
+				prev = prev.getNext();
+			}
+		}
+	}
+	
 	public void printLinkedList() {
 		INode tempNode = head;
 		while(tempNode != null) {

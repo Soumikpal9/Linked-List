@@ -21,7 +21,7 @@ public class Executor {
     	linkedList.addMiddle(midNode);
     	linkedList.printLinkedList();
     	
-    	linkedList.popValue(midNode);
+    	linkedList.sortList();
     	linkedList.printLinkedList();
     	
 	}

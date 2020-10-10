@@ -60,6 +60,26 @@ public class LinkedList {
 		head = head.getNext();
 	}
 	
+	public void popLast() {
+		if(head == null) {
+			System.out.println("List is empty");
+			return;
+		}
+		else {
+			if(head != tail) {
+				INode current = head;
+				while(current.getNext() != tail) {
+					current = current.getNext();
+				}
+				tail = current;
+				tail.setNext(null);
+			}
+			else {
+				head = tail = null;
+			}
+		}
+	}
+	
 	public int sizeOfLinkedList() {
 		INode tempNode = head;
 		int size = 0;

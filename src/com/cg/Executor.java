@@ -23,5 +23,8 @@ public class Executor {
     	
     	linkedList.popFirst();
     	linkedList.printLinkedList();
+    	
+    	linkedList.popLast();
+    	linkedList.printLinkedList();
 	}
 }

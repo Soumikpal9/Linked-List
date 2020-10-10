@@ -56,6 +56,10 @@ public class LinkedList {
 		}
 	}
 	
+	public void popFirst() {
+		head = head.getNext();
+	}
+	
 	public int sizeOfLinkedList() {
 		INode tempNode = head;
 		int size = 0;
